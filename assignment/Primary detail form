@@ -6,9 +6,9 @@
     <title>primary details</title>
 </head>
 <body>
-    <table width ="100%" border ="1" bgcolor ="gold">
+    <table width ="100%"  bgcolor ="gold">
         <tr>
-            <th bgcolor="purple" colspan="1"><font color ="white">PRIMARY DETAILS</font></th>
+            <th bgcolor="purple" colspan="1"><font color ="white">PRIMARY DETAILS <br></font></th>
         </tr>
         <tr>
             <td><label>Child's Name<br></label><input type ="text" name ="txtchiname" placeholder="Enter your child name"> </td>
@@ -28,10 +28,10 @@
                 <option>Mr.</option>
                 <option>Mrs.</option>
             </select><input type ="text" name ="parentname" placeholder="Enter your parent name"> </td>
-            <td><label>Parent's Mobile No</label>
+            <td><label>Parent's Mobile No <br></label>
              <input type ="number" name ="txtcon1" placeholder="Enter your contact"></td>
 
-            <td> <label>Email ID</label>
+            <td> <label>Email ID <br></label>
             <input type ="email" name ="paremail" placeholder="enter your email"> </td>
         </tr>
         <tr>
@@ -52,7 +52,7 @@
                      <option>Uttar pradesh</option>
                       <option>Jammu & kashmir</option>
             </select></td>
-             <td><label> state <br></label>
+             <td><label> City <br></label>
             <select name="city">
                  <option></option>
                 <option>delhi</option>
@@ -64,7 +64,7 @@
                      <option>lucknow</option>
                       <option>bengaluru</option>
             </select></td>
-            <td><label>Pin code</label>
+            <td><label>Pin code<br></label>
             <input type ="number" name ="pin" value ="" placeholder="Enter your city pin" ></td>
         </tr>
         <tr>
