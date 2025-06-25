@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+</head>
+<body>
+    <table bgcolor="darkblue" width ="50%" >
+        <tr>
+        <th bgcolor="orange" colspan="2"><h4 align ="left"><font color="yellow">Sign up</h4></th>
+        </tr>
+        <tr>
+            <td><label><font color="yellow">First Name </label></td>
+            <td><input type ="text" name ="firsttxt" value="" placeholder="Enter Your First Name"></td>
+        </tr>
+          <tr>
+            <td><font color="yellow">Last Name </td>
+            <td><input type ="text" name ="lasttxt" value ="" placeholder="Enter Your Last name"></td>
+        </tr>
+          <tr>
+            <td><font color="yellow">Date of Birth</td>
+            <td><input type="date" name ="txtdate" value =""></td>
+        </tr>
+          <tr>
+            <td><font color="yellow">Gender</td>
+            <td><input type ="radio" name ="gen" value ="male"><label><font color="yellow">Male</label>
+            <input type ="radio" name ="gen" value ="Female"> <label>Female</label></td>
+        </tr>
+          <tr>
+            <td><font color="yellow">Country</td>
+            <td><select name ="cty">
+                  <option> </option>
+                <option>india</option>
+                <option>china</option>
+                  <option>france</option>
+                    <option>russia</option>
+                      <option>usa</option>
+            </select></td>
+        </tr>
+          <tr>
+            <td><font color="yellow">E-mail</td>
+            <td><input type ="email" name ="email" value ="@gmail.com" placeholder="Enter Your E-mail"></td>
+        </tr>
+          <tr>
+            <td><font color="yellow">Phone</td>
+            <td><input type ="number" name ="phone" value="" placeholder="Enter your number"></td>
+        </tr>
+          <tr>
+            <td><font color="yellow">Password</td>
+            <td><input type ="password" name ="txtpass2" value ="" placeholder="Enter Your Password"></td>
+        </tr>
+          <tr>
+            <td><font color="yellow">Confirm Password</td>
+           <td><input type ="password" name ="txtcopass2" value ="" placeholder="Enter Your Confirm Pass"></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"><input type ="checkbox" name ="agree" value=""><label><font color="yellow">I Agree to the Term of use</label></td>
+        </tr>
+        <tr bgcolor="orange" height ="50">
+            <td colspan="2" align="right">
+                <input type ="submit" name ="submit" value ="submit">
+                <input type ="reset" name ="cancel" value ="cancel">
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
