@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primary details</title>
+</head>
+<body>
+    <table width ="100%" border ="1" bgcolor ="gold">
+        <tr>
+            <th bgcolor="purple" colspan="1"><font color ="white">PRIMARY DETAILS</font></th>
+        </tr>
+        <tr>
+            <td><label>Child's Name<br></label><input type ="text" name ="txtchiname" placeholder="Enter your child name"> </td>
+            <td><label>Child's Date of Birth<br></label><input type ="date" name ="txtchidate" value=""> </td>
+             <td><label>Child's Gender<br></label><select name ="gen">
+                <option></option>
+                <option>Male</option>
+                <option>Female</option>
+             </select></td>
+        </tr>
+        <tr>
+            <th width="40%" bgcolor="purple" colspan="1" align="left"><font color ="white">PARTICIPATION INFORMATION</font></th>
+        </tr>
+        <tr>
+            <td><label>Parent's Name<br></label><select name ="parent">
+                <option></option>
+                <option>Mr.</option>
+                <option>Mrs.</option>
+            </select><input type ="text" name ="parentname" placeholder="Enter your parent name"> </td>
+            <td><label>Parent's Mobile No</label>
+             <input type ="number" name ="txtcon1" placeholder="Enter your contact"></td>
+
+            <td> <label>Email ID</label>
+            <input type ="email" name ="paremail" placeholder="enter your email"> </td>
+        </tr>
+        <tr>
+             <td><label>House No. / Building Name <br></label><input type ="text" name ="buildname" placeholder="House No. / Building Name"> </td>
+             <td><label>Street<br></label><input type ="text" name ="streettxt" placeholder="Street"> </td>
+             <td><label>Locality<br></label><input type ="text" name ="Localitytxt" placeholder="Locality"> </td>
+        </tr>
+        <tr>
+            <td><label> state <br></label>
+            <select name="state">
+                 <option></option>
+                <option>Rajasthan</option>
+                <option>Punjab</option>
+                 <option>Hariyana</option>
+                  <option>Gujrat</option>
+                   <option>Maharastra</option>
+                    <option>Tamil Nadu</option>
+                     <option>Uttar pradesh</option>
+                      <option>Jammu & kashmir</option>
+            </select></td>
+             <td><label> state <br></label>
+            <select name="city">
+                 <option></option>
+                <option>delhi</option>
+                <option>mumbai</option>
+                 <option>kolkata</option>
+                  <option>chennai</option>
+                   <option>chittorgarh</option>
+                    <option>chandigarh</option>
+                     <option>lucknow</option>
+                      <option>bengaluru</option>
+            </select></td>
+            <td><label>Pin code</label>
+            <input type ="number" name ="pin" value ="" placeholder="Enter your city pin" ></td>
+        </tr>
+        <tr>
+            <td><label>Username <br></label><input type ="text" name ="User" placeholder="Username"></td>
+             <td><label>Password<br></label>
+            <input type ="password" name ="pass2" value ="" placeholder="Password" ></td>
+              <td><label>Confirm Password <br></label>
+            <input type ="password" name ="Copass2" value ="" placeholder="Confirm Password" ></td>
+
+        </tr>
+        <tr>
+            <td colspan="3">
+             <input type ="checkbox" name ="agree1" value ="agreement"><label>Are You Max Life Employee Or Agent Advisor?</label>
+            </td>
+        </tr>
+        <tr >
+            <td colspan ="3"><label>Where Did You Here About Us<br></label>
+            <select >
+                <option></option>
+                 <option>By Your marketing faculty</option>
+                  <option>Advertisement</option>
+                   <option>By my friend</option>
+            </select></td>
+
+        </tr>
+        <tr>
+          <td colspan="3">
+             <input type ="checkbox" name ="agree2" value ="agreement2"><label>I agree to the Term & Condition</label>
+            </td>
+        </tr>
+        <tr height ='80'>
+            
+           <td colspan="3"> <input type ="submit" name ="sub2" value ="REGISTER NOW"></td>
+        </tr>
+    </table>
+</body>
+</html>
