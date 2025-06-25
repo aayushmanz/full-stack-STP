@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      
+    <fieldset>
+        <table width ="100%" bgcolor ="gree" >
+        <legend align ="center">USER FORM</legend>
+      
+            <tr>
+                <td>
+                   <label><li>First Name </li></label>
+                </td>
+                <td align=""><input type ="text" name ="txtname" value=""></td>
+            </tr>
+            <tr>
+                <td><label> <li>PASSWORD</li> </label></td>
+                <td><input type ="password" name ="txtpass" value=""></td>
+            </tr>
+             <tr>
+                <td><label for=""><li>Gender</li></label></td>
+                <td><input type ="radio" value ="male" name ="gen" ><label for="">Male</label>
+                  <input type ="radio" value ="female" name ="gen" ><label for="">Female</label></td>
+            </tr>
+             <tr>
+                <td><label for=""><li>Address</li></label></td>
+                <td><textarea rows ="5" cols ="20"></textarea></td>
+            </tr>
+             <tr>
+                <td><li>D O B</li></td>
+                <td><input type ="date" name ="txtdob"> </td>
+            </tr>
+            <tr>
+                <td><li>SELECT GAMES</li></td>
+                
+                <td><input type ="checkbox" name ="txtgame" value ="hockey"><label>Hockey</label>
+                 <input type ="checkbox" name ="txtgame" value ="football"><label>Football</label>
+                  <input type ="checkbox" name ="txtgame" value ="cricket"><label>Cricket</label>
+                  <input type ="checkbox" name ="txtgame" value ="Volleyball"><label>Volleyball</label></td>
+            </tr>
+            <tr>
+                <td><label for=""> <li>Marital status</li></label></td>
+                <td><input type ="radio" name ="txtmarr" value ="married"> <label>Married</label>
+                 <input type ="radio" name ="txtmarr" value ="unmarried"> <label>Unmarried</label></td>
+            </tr>
+            <tr>
+                <td align ="center" colspan="2">
+                    <input  type ="submit" name ="sub1" value ="submit">
+                    <input type ="reset" name ="res1" value ="reset">
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2" align ="center"><input type ="checkbox" name ="agreement" value ="agreement" >I accept this agreement</td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
