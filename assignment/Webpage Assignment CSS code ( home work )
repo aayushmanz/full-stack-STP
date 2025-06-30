@@ -208,5 +208,6 @@ iframe{
    }
    .boxes1:hover{
     color: orange;
+     transform: scale(1.1);
    }
   
