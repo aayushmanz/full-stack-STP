@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webpage</title>
     <link rel="stylesheet" href="4.css">
+    <style>
+      ::selection {
+  background: orange;
+  color: white;
+}
+    </style>
 </head>
 <body bgcolor="#040D72">
     <table cellspacing ="0" bgcolor ="#040D72" width ="100%" >
