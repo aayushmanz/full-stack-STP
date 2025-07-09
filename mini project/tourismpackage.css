@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') no-repeat center center fixed;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0%;
+  background-size:cover ;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 8px #00ffe0;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #00ffe0;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 15px;
+    padding: 15px 0;
+    border-radius: 10px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .navbar-links {
+    display: flex;
+  }
+
+  .navbar-links a {
+    padding: 10px 20px;
+  }
+}
+.container {
+    margin-top: 70px;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  
+  
+}
+
+h1 {
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #ffffff;
+  
+  animation: rainbow-glow 7s linear infinite;
+}
+
+p {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-shadow: 0 0 9px #00eaff;
+  
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  min-height: 230px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  width: 100%;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.card-content p {
+  margin-top: 5px;
+  font-size: 1em;
+}
+.footer {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 20px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.footer-socials {
+  margin: 20px 0;
+}
+
+.footer-socials a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #00ffcc;
+  left: 0;
+  bottom: -4px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+ 
+}
+
+.footer-socials a:hover {
+  color: #00ffcc;
+}
+
+.footer-socials a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+.section-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-title h2 {
+      font-size: 2em;
+      margin: 0;
+      font-weight: 700;
+      color: #ffffff;
+   
+      animation: rainbow-glow 7s linear infinite;
+    }
+
+    .section-title p {
+      font-size: 1em;
+      color: #ffffff;
+    }
+
+    .trending-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .destination-card {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 15px;
+      width: 160px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .destination-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .destination-name {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #000;
+    }
+
+    .destination-name.special {
+      color: #007bff;
+    }
+
+    @media (max-width: 768px) {
+      .destination-card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .destination-card {
+        width: 100%;
+      }
+    }
+ @keyframes rainbow-glow {0%{text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 30px yellow;}25%{text-shadow:0 0 10px green, 0 0 20px cyan, 0 0 30px blue;}50%{text-shadow: 0 0 10px indigo, 0 0 20px violet, 0 0 30px red;}75%{text-shadow: 0 0 10px orange, 0 0 20px yellow, 0 0 30px green;}100%{text-shadow: 0 0 10px blue, 0 0 20px indigo, 0 0 30px violet;}}
